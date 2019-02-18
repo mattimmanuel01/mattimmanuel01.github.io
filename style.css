@@ -1,0 +1,194 @@
+
+
+h1,h2 {
+
+			text-align: center;
+			color:#f4f1de;
+			font: 95px/1 "Oswald";
+			letter-spacing:2px;
+			font-weight:bold;
+			text-transform: uppercase;
+			display: block;
+			text-shadow: #863027 .01em .01em 0,
+			#863027 .02em .02em 0,
+			#863027 .03em .03em 0,
+			#863027 .04em .04em 0,
+			#863027 .05em .05em 0,
+			#863027 .06em .06em 0,
+			#863027 .07em .07em 0,			
+			#863027 .08em .08em 0,
+			#863027 .09em .09em 0,
+			#863027 .1em .1em 0;
+			margin-bottom: 15px;
+
+
+}
+
+#main {
+	background-color: #c44032;
+	padding-top: 5%;
+}
+
+.about {
+	font-size: 40px;
+	font-family: 'Oswald';
+	padding-top: 50px;
+}
+
+.about_desc{
+
+	font-family: 'Nanum Gothic';
+	font-size: 20px;
+	margin-top: 25px;
+}
+
+.header{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index:5;
+}
+
+hr.style7 {
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+
+.imageholder{
+	position:relative;
+	display: inline-block;
+	margin: 15px;
+  	width: 120px;
+  	height: 120px;
+  	padding: 10px;
+  	margin-left: 50px;
+}
+
+.images{
+	position: absolute;
+	height:120px;
+	width:120px;
+	border-radius:3px;
+	border: 3px black;
+
+}
+
+.images-js{
+	position: absolute;
+	height:120px;
+	width:120px;
+	border-radius:3px;
+	border: 3px black;
+
+}
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+   
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #89b5ff !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay:1.2s;
+  animation-delay: 1.2s;
+}
+
+
